@@ -5,11 +5,82 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.home-background{
+    width: 20%;
+    height: 50%;
+    position:absolute;
+    right: 100px;
+}
+.home-background img{
+    height: 85%;
+    position: absolute;
+    left: 40%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+
+       
+
+      
+}
+.home-background:hover .me{
+    left: 45%;
+}
 section{
     min-height: 100vh;
     background-image: /*linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),*/ url("/images/page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info li{
+    text-align: center;
+    text-align: left;
+}
+.contact-info a:hover{
+    color: blue;
+}
+
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.home-sci a:hover{
+    color: red;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100;
+    background: red;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before{
+    width: 100%;
 }
 .container{
     width: 85%;
@@ -51,22 +122,28 @@ nav ul li .active{
 .article{
     /*width: 50px;*/
     margin:auto;
-    text-align: center;
+    text-align: left;
     transform: translateY(25vh);
 }
 .article h1{
     font-size: 36px;
-    color: red;
+    color:white;
     letter-spacing: 1.5px;
     font-weight: 800;
     margin-bottom: 25px;
-    text-decoration: underline;
 }
+.article h2{
+    color: red;
+}
+span{
+    color: red;
+ }
 .article p{
     font-size: 18px;
     color:white;
     line-height: 1.5;
     margin-bottom: 50px;
+    text-align: left;
 }
 .article .btn{
     color: #fff;
@@ -75,9 +152,12 @@ nav ul li .active{
     text-transform: uppercase;
     text-decoration: none;
     background-color:red;
+    margin-right: 50px ;
+    border-radius: 5px;
 
 }
 .article .btn:hover{
-    background-color: #4399fa;
+    background-color: black;
     transition: 0.2s ease;
+    color: white;
 }
