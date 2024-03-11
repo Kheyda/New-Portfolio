@@ -5,6 +5,68 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+footer{
+    background-color: #111;
+}
+.Footercontainer{
+    width: 100%;
+    padding: 5px 5px 2px;
+}
+.SocialIcons{
+    display: flex;
+    justify-content: center;
+}
+.SocialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.FooterNav{
+    margin: 2px 0;
+}
+.FooterNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.FooterNav ul li{
+    color: #111;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.FooterNav a{
+    color: white;
+    text-decoration:none;
+}
+.FooterNav ul li a:hover{
+    opacity: 1;
+    color: red;
+}
+.FooterBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.FooterBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.SocialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
 .home-background{
     width: 20%;
     height: 50%;
@@ -160,4 +222,14 @@ span{
     background-color: black;
     transition: 0.2s ease;
     color: white;
+}
+@media (max-width: 700px){
+    .FooterNav ul{
+        flex-direction: column;
+    }
+    .FooterNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
 }
