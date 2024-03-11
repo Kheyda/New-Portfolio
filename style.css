@@ -104,6 +104,9 @@ section{
     text-align: center;
     text-align: left;
 }
+.contact-info ul{
+    list-style-type: none;
+}
 .contact-info a:hover{
     color: blue;
 }
